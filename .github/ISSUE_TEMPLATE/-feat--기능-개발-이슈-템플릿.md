@@ -1,6 +1,6 @@
 ---
-name: '템플릿 네임 '
-about: 뭐할 때 쓰는 템플릿인
+name: "[Feat] 기능 개발 이슈 템플릿"
+about: 기능 개발
 title: '이슈 기본값. 예: [Feat]:'
 labels: ''
 assignees: ''
