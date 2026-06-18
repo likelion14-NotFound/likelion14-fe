@@ -16,6 +16,8 @@ const TextBox = styled.div`
   flex-direction: column;
   gap: 31px;
   width: fit-content;
+  justify-content: center;
+  align-items: center;
 `;
 
 const FirstTextBox = styled.div`
