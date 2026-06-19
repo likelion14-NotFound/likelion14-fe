@@ -4,7 +4,6 @@
   background-color: #ffffff;
 }
 
-/* Q2 영역 */
 .subscribe-question-section {
   padding: 54px 0 88px;
   text-align: center;
@@ -40,9 +39,11 @@
   background-color: #fbf8ff;
   border-radius: 8px;
   color: #4b22f4;
+
   display: flex;
   align-items: center;
   justify-content: center;
+
   font-size: 15px;
   font-weight: 600;
 }
@@ -59,16 +60,35 @@
   margin: 7px 0;
 }
 
-/* 복습 영역 */
 .subscribe-review-section {
   padding: 64px 0 90px;
   text-align: center;
   background-color: #fbf8ff;
 }
 
+.mascot-card {
+  width: 70%;
+  max-width: 390px;
+  height: 135px;
+  margin: 42px auto 46px;
+
+  background-color: #ffffff;
+  border-radius: 8px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mascot-card img {
+  height: 110px;
+  object-fit: contain;
+}
+
 .session-card-list {
   width: 82%;
   margin: 0 auto 150px;
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -81,20 +101,67 @@
   background-color: #ffffff;
   border-radius: 8px;
   color: #4b22f4;
+
   display: flex;
   align-items: center;
   justify-content: center;
+
   font-size: 15px;
   font-weight: 700;
 }
 
 .session-next-button {
+  width: 40px;
+  height: 90px;
+
   border: none;
   background: transparent;
   color: #4b22f4;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   font-size: 54px;
+  font-weight: 300;
   line-height: 1;
+  font-family: inherit;
+
   cursor: pointer;
+  padding: 0;
+
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+.subscribe-join-button {
+  width: 130px;
+  height: 44px;
+
+  border: 1.5px solid #4b22f4;
+  border-radius: 999px;
+
+  background-color: #ffffff;
+  color: #4b22f4;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 15px;
+  font-weight: 600;
+  font-family: inherit;
+
+  cursor: pointer;
+  padding: 0;
+
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+.subscribe-join-button:hover {
+  background-color: #4b22f4;
+  color: #ffffff;
 }
 
 @media (max-width: 600px) {
