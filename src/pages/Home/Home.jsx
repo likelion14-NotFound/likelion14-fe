@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import TopSection from "../../components/common/topSection/TopSection";
 import buttonUrl from "../../assets/images/button.svg";
+import Header from "../../components/header/Header";
 
 export default function Home() {
   return (
