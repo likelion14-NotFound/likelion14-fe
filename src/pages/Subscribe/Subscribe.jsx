@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 
 import TopSection from "../../components/common/topSection/TopSection.jsx";
@@ -9,15 +9,39 @@ import humanImg from "../../assets/images/human.svg";
 import "./Subscribe.css";
 
 function Subscribe() {
+  const sessionGroups = [
+    ["1주차 세션", "2주차 세션", "3주차 세션"],
+    ["4주차 세션", "5주차 세션", "6주차 세션"],
+    ["7주차 세션", "8주차 세션", "9주차 세션"],
+  ];
+
+  const [currentSessionIndex, setCurrentSessionIndex] = useState(0);
+
+  const handleNextSession = () => {
+    setCurrentSessionIndex((prevIndex) =>
+      prevIndex === sessionGroups.length - 1 ? 0 : prevIndex + 1
+    );
+  };
+
+  const handleGoHome = () => {
+    window.location.href = "/";
+  };
+
   return (
     <main className="subscribe-page">
-      <TopSection
-        firstText="매주 만나는"
-        pinkText="멋쟁이사자"
-        normalText="뉴스레터."
-        image={letterImg}
-        alt="뉴스레터 봉투 이미지"
-      />
+      <SubscribeTopWrapper>
+        <BackButton type="button" onClick={handleGoHome}>
+          ‹
+        </BackButton>
+
+        <TopSection
+          firstText="매주 만나는"
+          pinkText="멋쟁이사자"
+          normalText="뉴스레터."
+          image={letterImg}
+          alt="뉴스레터 봉투 이미지"
+        />
+      </SubscribeTopWrapper>
 
       <section className="subscribe-question-section">
         <h2 className="question-number">Q2</h2>
@@ -58,11 +82,17 @@ function Subscribe() {
         </div>
 
         <div className="session-card-list">
-          <div className="session-card">1주차 세션</div>
-          <div className="session-card">2주차 세션</div>
-          <div className="session-card">3주차 세션</div>
+          {sessionGroups[currentSessionIndex].map((session) => (
+            <div className="session-card" key={session}>
+              {session}
+            </div>
+          ))}
 
-          <button type="button" className="session-next-button">
+          <button
+            type="button"
+            className="session-next-button"
+            onClick={handleNextSession}
+          >
             ›
           </button>
         </div>
@@ -84,6 +114,36 @@ function DotDivider() {
     </DotDividerBox>
   );
 }
+
+const SubscribeTopWrapper = styled.div`
+  position: relative;
+  width: 100%;
+`;
+
+const BackButton = styled.button`
+  position: absolute;
+  top: 120px;
+  left: 70px;
+  z-index: 10;
+
+  border: none;
+  background: transparent;
+  color: #ffffff;
+
+  font-size: 90px;
+  font-weight: 200;
+  line-height: 1;
+
+  cursor: pointer;
+  padding: 0;
+
+  appearance: none;
+  -webkit-appearance: none;
+
+  &:hover {
+    opacity: 0.8;
+  }
+`;
 
 const DotDividerBox = styled.div`
   display: flex;
