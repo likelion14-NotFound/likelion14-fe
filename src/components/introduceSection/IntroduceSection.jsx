@@ -1,4 +1,7 @@
 import styled from "styled-components";
+import introImage1 from "../../assets/images/intro_image1.jpg";
+import introImage2 from "../../assets/images/intro_image2.jpg";
+import introImage3 from "../../assets/images/intro_image3.jpg";
 
 const SectionContainer = styled.section`
   width: 100%;
@@ -70,6 +73,20 @@ const Introduce = styled.div`
   line-height: normal;
 `;
 
+const ImageCardGroup = styled.div`
+  display: flex;
+  justify-content: space-between;
+  width: 1051px;
+`;
+
+const ImageCard = styled.img`
+  width: 285px;
+  height: 293px;
+  border-radius: 20px;
+  object-fit: cover;
+  display: block;
+`;
+
 export default function IntroduceSection() {
   return (
     <SectionContainer>
@@ -91,6 +108,11 @@ export default function IntroduceSection() {
         </Introduce>
         <Introduce>느려도 멈추지 않는 개발자 김민솔 입니다.</Introduce>
       </IntroduceBox>
+      <ImageCardGroup>
+        <ImageCard src={introImage1} alt="프론트엔드 소개 이미지 1" />
+        <ImageCard src={introImage2} alt="프론트엔드 소개 이미지 2" />
+        <ImageCard src={introImage3} alt="프론트엔드 소개 이미지 3" />
+      </ImageCardGroup>
     </SectionContainer>
   );
 }
