@@ -4,7 +4,7 @@ import humanImage from "../../assets/images/human.svg";
 
 const SectionContainer = styled.section`
   width: 100%;
-  height: 2200px;
+  height: 2100px;
   display: flex;
   flex-direction: column;
   align-items: center;
