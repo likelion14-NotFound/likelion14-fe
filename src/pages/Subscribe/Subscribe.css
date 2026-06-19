@@ -1,0 +1,198 @@
+.subscribe-page {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #ffffff;
+}
+
+.subscribe-question-section {
+  padding: 54px 0 88px;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+.question-number {
+  margin: 0;
+  color: #4b22f4;
+  font-size: 30px;
+  font-weight: 800;
+}
+
+.section-title {
+  margin: 0;
+  color: #4b22f4;
+  font-size: 32px;
+  font-weight: 800;
+  letter-spacing: -1px;
+}
+
+.subscribe-keyword-cards {
+  width: 74%;
+  margin: 42px auto 58px;
+  display: flex;
+  justify-content: center;
+  gap: 44px;
+}
+
+.subscribe-keyword-card {
+  width: 134px;
+  height: 86px;
+  background-color: #fbf8ff;
+  border-radius: 8px;
+  color: #4b22f4;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.subscribe-description {
+  margin-top: 20px;
+  line-height: 2.25;
+  color: #222222;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.subscribe-description p {
+  margin: 7px 0;
+}
+
+.subscribe-review-section {
+  padding: 64px 0 90px;
+  text-align: center;
+  background-color: #fbf8ff;
+}
+
+.mascot-card {
+  width: 70%;
+  max-width: 390px;
+  height: 135px;
+  margin: 42px auto 46px;
+
+  background-color: #ffffff;
+  border-radius: 8px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mascot-card img {
+  height: 110px;
+  object-fit: contain;
+}
+
+.session-card-list {
+  width: 82%;
+  margin: 0 auto 150px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 34px;
+}
+
+.session-card {
+  width: 136px;
+  height: 90px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  color: #4b22f4;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.session-next-button {
+  width: 40px;
+  height: 90px;
+
+  border: none;
+  background: transparent;
+  color: #4b22f4;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 54px;
+  font-weight: 300;
+  line-height: 1;
+  font-family: inherit;
+
+  cursor: pointer;
+  padding: 0;
+
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+.subscribe-join-button {
+  width: 130px;
+  height: 44px;
+
+  border: 1.5px solid #4b22f4;
+  border-radius: 999px;
+
+  background-color: #ffffff;
+  color: #4b22f4;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 15px;
+  font-weight: 600;
+  font-family: inherit;
+
+  cursor: pointer;
+  padding: 0;
+
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+.subscribe-join-button:hover {
+  background-color: #4b22f4;
+  color: #ffffff;
+}
+
+@media (max-width: 600px) {
+  .section-title {
+    font-size: 26px;
+  }
+
+  .subscribe-keyword-cards {
+    width: 90%;
+    gap: 16px;
+  }
+
+  .subscribe-keyword-card {
+    width: 100px;
+    height: 78px;
+    font-size: 13px;
+  }
+
+  .session-card-list {
+    width: 90%;
+    gap: 14px;
+  }
+
+  .session-card {
+    width: 100px;
+    height: 78px;
+    font-size: 13px;
+  }
+
+  .subscribe-description {
+    padding: 0 24px;
+    font-size: 13px;
+  }
+}
