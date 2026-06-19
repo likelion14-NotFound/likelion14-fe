@@ -2,6 +2,7 @@ import styled from "styled-components";
 import TopSection from "../../components/common/topSection/TopSection";
 import buttonUrl from "../../assets/images/button.svg";
 import IntroduceSection from "../../components/introduceSection/IntroduceSection";
+import HackathonSection from "../../components/hackathonSection/HackathonSection";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
         alt="상단 이미지"
       />
       <IntroduceSection />
+      <HackathonSection />
     </>
   );
 }
