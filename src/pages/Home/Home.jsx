@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import TopSection from "../../components/common/topSection/TopSection";
 import buttonUrl from "../../assets/images/button.svg";
-import Header from "../../components/header/Header";
+import IntroduceSection from "../../components/introduceSection/IntroduceSection";
 
 export default function Home() {
   return (
@@ -13,6 +13,7 @@ export default function Home() {
         image={buttonUrl}
         alt="상단 이미지"
       />
+      <IntroduceSection />
     </>
   );
 }
